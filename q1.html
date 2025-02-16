@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test1style.css"/>
+    <script src="https://kit.fontawesome.com/6b5f9e533c.js" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+    <div id="stickynavdiv">
+        <header style="background-color:white;">
+            <img  src="logo.png" alt="company logo" id="logo" heigth="70px" width="68px"/>
+            
+            <h1 id="name">E-Commerce</h1>
+        </header>
+
+    
+        <nav id="nav">
+            <div id="navdiv">
+                <a href=""><div class="navitem">Home</div></a>
+                <a href=""><div class="navitem">Products</div></a>
+                <a href=""><div class="navitem">About</div></a>
+                <a href=""><div class="navitem">Contact</div></a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div id="featureddiv">
+            <img src="flared.jpg" alt="featured product, Accent chair" width="40%" heigth="46%" id="featureimg"/>
+            <br/>
+            <br/>
+            <br/>
+            <h3>STOCKHOLM</h3>
+            <h1 id="featureh">Flared Accent Chair</h1>
+            
+            <p>A unique, modern armchair that offers flared styling on one side to accent  your home's living room and decor.</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            
+            <div id="fbtndiv"><button id="fbtn">Buy Now</button></div>
+        </div>
+
+        <h2 style="clear: both;">Continue Shopping for</h2>
+        <div id="container">
+            <div class="item">
+                <div class="img1">
+                    <img src="PurcellEM.png" alt="Purcell Electricity and Magnetism book"/>
+                </div>
+                <div>Purcell Electricity and Magnetism</div>
+                <div>₹550</div>
+                <div>
+                    <button class="adcBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img2">
+                    <img src="light.png" alt="Chandelier" style="margin-bottom:83px"/>
+                </div> 
+                <div>Chandelier</div>
+                <div>₹5900</div>
+                <div>
+                    <button class="adcBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img3">
+                    <img src="ac.png" alt="Air conditioner" style="margin-bottom:83px"/>
+                </div>
+                <div>Air Conditioner</div>
+                <div>₹44999</div>
+                <div>
+                    <button class="adcBtn">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="img4">
+                    <img src="stand.png" alt="laptop stand" style="margin-bottom:54px"/>
+                </div>
+                <div>Laptop Stand</div>
+                <div>₹399</div>
+                <div>
+                    <button class="adcBtn">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <hr>
+
+        <h2>Shop with confidence</h2>
+        <button class="features">Free Shipping</button>
+        <button class="features">Secure Payment</button>
+        <button class="features">Pay on delivery</button>
+        <button class="features">7 days Replacement</button>
+        <button class="features">24/7 Support</button>
+
+        <hr>
+
+        <h2>Reviews</h2>
+        <p>To check for reviews <a id="review" href="review.html" target="_blank">click here</a>.</p>
+        <hr/>
+        <h2>Newsletter Subscription form</h2>
+        <p>To recieve updates about the <b>latest offers</b> and deals along with the <b>most bought items of the week</b> and <i>much more</i>, do fill the newsletter subscription form below <b>for free!</b></p>
+
+        <div id="formdiv">
+            <form action="" method="POST">
+                <input type="checkbox" id="subscribe"/>
+                <label for="subscribe" id="lsubscribe"><b>Subscribe</b></label><br/>
+
+                <label for="email" id="lemail">Email<span class="req">*</span></label>
+                <input type="email" id="email" placeholder="Enter your email here" autocomplete="off" required/><br/><br/>
+                
+                <input type="submit" id="subsub" value="Submit"/>
+
+            </form>
+        </div>
+    </main>
+
+
+    <footer id="footer">
+        <div id="fcontainer">
+            <div id="connectdiv">
+                <p id="pconnect" style="color: white;">Connect with Us</p>
+                <div id="icons">
+                    <a href="https://www.x.com">
+                        <i class="fa-brands fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://facebook.com">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://youtube.com">
+                        <i class="fa-brands fa-youtube fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="divcontact">
+                <p style="color: white;">Contact Us</p>
+                <p style="color: white;">Email: <a href="">ecommerce@gmail.com</a></p>
+                <p style="color: white;">Toll-free: <a href="">1800-500-250</a></p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

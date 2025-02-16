@@ -1,0 +1,327 @@
+*{
+    box-sizing:border-box;
+}
+
+/* Logo and name of the site */
+
+
+#logo{
+    float: left;
+    margin-right: 2px;
+    padding-bottom: 5px;
+}
+#logo:hover{
+    outline: 2px solid black;
+}
+#name{
+    text-align: center;
+    background-color: hsl(0, 100%, 99%);
+    color: hsl(207, 97%, 26%);
+    margin: 0px;
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 6px;
+}
+#name:hover{
+    outline: 2px solid black;
+}
+
+
+
+/* Navigation Bar */
+
+
+#navdiv{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(223, 53%, 29%);
+    align-items: center;
+    margin: 0px;
+}
+#navdiv:hover{
+    outline: 2px solid black;
+}
+#stickynavdiv{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.navitem{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+#navdiv div:hover{
+    outline: 2px solid white;
+    cursor: pointer;
+}
+
+#navdiv a{
+    text-decoration: none;
+    color: hsl(228, 20%, 90%);
+}
+#navdiv a:active{
+    color: green;
+}
+
+
+
+
+
+/* Featured Product */
+
+#featureddiv{
+    border: 1px solid black;
+    height: auto;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display:flow-root;
+
+}
+#featureddiv p{
+    font-size: 140%;
+}
+#featureimg{
+    float: left;
+}
+#featureh{
+    color: red;
+    font-size: 50px;
+}
+#featureddiv:hover{
+    outline: 0.05rem solid black;
+}
+
+#fbtn{
+    padding: 7px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 1.6em;
+    background-color: hsl(45, 82%, 59%);
+    color: hsl(0, 3%, 6%);
+    border: 1px solid hsl(45, 82%, 59%);
+}
+#fbtndiv{
+    text-align: center;
+}
+#fbtn:hover{
+    background-color: hsl(45, 100%, 48%);
+    color: hsl(0, 0%, 0%);
+}
+#fbtn:active{
+    color: hsl(120, 81%, 51%);
+}
+
+
+
+
+/* Product Showcase section */
+
+#container{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 310px);
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+    margin-top: 10px;
+    height: auto;
+}
+#container .item:hover{
+    outline: 3px solid black;
+    background-color: hsl(0, 11%, 87%);
+}
+
+.item div{
+    text-align:center;
+    padding: 2.5px;
+}
+.item{
+    border: 2px solid black;
+}
+
+.adcBtn{
+    padding: 5px;
+    border-radius: 20px;
+    border: 0.5px solid hsl(60, 100%, 50%);
+    background-color: yellow;
+}
+
+.adcBtn:hover{
+    border: 1px solid black;
+    background-color: hsl(55, 92%, 70%);
+}
+
+
+
+
+/* Features  */
+
+.features{
+    border:0px;
+    background-color: hsl(195, 97%, 76%);
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 6px;
+    padding: 5px;
+    text-shadow: 3px 3px 5px hsl(195, 100%, 30%);
+}
+
+
+
+
+
+/* Review */
+
+#review{
+    text-decoration: none;
+}
+#review:active{
+    color: green;
+}
+#review:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Newletter Form */
+
+#formdiv{
+    text-align: center;
+    border: 2px solid;
+    background-color:hsl(195, 100%, 85%);
+    width: 100%;
+}
+#subsub{
+    border-radius: 10px;
+    padding: 4px;
+    margin: 2px;
+    background-color: hsl(39, 100%, 58%);
+}
+#email{
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 4px;
+}
+
+#lsubscribe{
+    color: green;
+    font-style: italic;
+}
+.req{
+    color: red;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    background-color:hsl(223, 53%, 29%);
+}
+#fcontainer{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 125px;
+    grid-template-columns: 1fr 1fr;
+}
+#connectdiv,#divcontact{
+    text-align: center;
+    display:flow-root;
+}
+#icons{
+    margin-top: 5px;
+    /* text-align: center; */
+}
+#icons i{
+    margin-right: 10px;
+}
+.fa-brands.fa-twitter.fa-2x{
+    color: hsl(203, 89%, 53%);
+}
+.fa-brands.fa-twitter.fa-2x:hover{
+    color: hsl(203, 89%, 63%);
+}
+.fa-brands.fa-facebook.fa-2x{
+    color: hsl(214, 89%, 52%);
+}
+.fa-brands.fa-facebook.fa-2x:hover{
+    color: hsl(214, 89%, 62%);
+}
+.fa-brands.fa-youtube.fa-2x{
+    color: hsl(0, 100%, 50%);
+}
+.fa-brands.fa-youtube.fa-2x:hover{
+    color: hsl(0, 100%, 60%);
+}
+
+#pconnect{
+    padding-right: 10px;   
+}
+
+
+#divcontact a{
+    text-decoration: none;
+    color: hsl(203, 89%, 53%);
+}
+
+#divcontact a:hover{
+    text-decoration: underline;
+}
+
+#icons a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:630px){
+    #navdiv{
+        flex-direction: column;
+        clear: both;
+    }
+    #stickynavdiv{
+        position: relative;
+    }
+    #name{
+        clear: both;
+        text-align: center;
+        margin-left: 0px;
+    }
+    #logo{
+        display: block;
+    }
+    #featureimg{
+        width: auto;
+        float: none;
+        width: 100%;
+    }
+    #featureh{
+        font-size:180%;
+    }
+    #featureddiv p{
+        font-size: 100%;
+    }
+    #fbtn{
+        font-size: 1.2em;
+    }
+    #email{
+        width: 75%;
+    }
+}
+
+
+
