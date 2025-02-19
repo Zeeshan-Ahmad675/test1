@@ -12,6 +12,11 @@
             <img  src="logo.png" alt="company logo" id="logo" heigth="70px" width="68px"/>
             
             <h1 id="name">E-Commerce</h1>
+            <div class="bar" id="tbar" onclick="opennav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </header>
 
     
@@ -26,7 +31,7 @@
         </nav>
     </div>
 
-    <main>
+    <main onclick="closenav()">
         <div id="featureddiv">
             <img src="flared.jpg" alt="featured product, Accent chair" width="40%" heigth="46%" id="featureimg"/>
             <br/>
@@ -149,5 +154,15 @@
         </div>
 
     </footer>
+
+    <script>
+        function opennav(){
+            document.getElementById("navdiv").style.display = "block"
+            // document.getElementById("navdiv").style.opacity = "1";
+        }
+        function closenav(){
+            document.getElementById("navdiv").style.display = "none";
+        }
+    </script>
 </body>
 </html>
