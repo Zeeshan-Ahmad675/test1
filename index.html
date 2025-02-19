@@ -23,10 +23,10 @@
     
         <nav id="nav">
             <div id="navdiv">
-                <a href=""><div class="navitem">Home</div></a>
-                <a href=""><div class="navitem">Products</div></a>
-                <a href=""><div class="navitem">About</div></a>
-                <a href=""><div class="navitem">Contact</div></a>
+                <a href=""><div class="navitem" onclick="closenav()">Home</div></a>
+                <a href="#products"><div class="navitem" onclick="closenav()">Products</div></a>
+                <a href=""><div class="navitem" onclick="closenav()">About</div></a>
+                <a href="#footer"><div class="navitem" onclick="closenav()">Contact</div></a>
             </div>
         </nav>
     </div>
@@ -50,7 +50,7 @@
             <div id="fbtndiv"><button id="fbtn">Buy Now</button></div>
         </div>
 
-        <h2 style="clear: both;">Continue Shopping for</h2>
+        <h2 style="clear: both;" id="products">Continue Shopping for</h2>
         <div id="container">
             <div class="item">
                 <div class="img1">
